@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font/css/fontawesome.min.css">
+    <link rel="stylesheet" href="font/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+        <section id="header" class="section_p1">
+            <a class="logo-wrapper" href="index.html">
+                <img class="logo" src="./img/Ansys_logo.png" alt="">
+            </a>
+            <ul id="navbar">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="index.html">Shop</a></li>
+                <li><a href="index.html">sign up</a></li>
+                <li><a href="cart.html"></a><i id="lg_bag" class="fas fa-shopping-bag"></i></a></li>
+                <a href=""></a><i id="close" class="fas fa-times"></i></a>
+            </ul>
+
+            <div id="mobile">
+                <a href="cart.html"></a><i class="fas fa-shopping-bag"></i></a>
+               <i id="bar" class="fas fa-outdent"></i>
+    
+            </div>
+            
+        </section>
+        <section class="section_p1">
+            <form action="" id="form">
+                <div class="payment_details">
+                    <h2>Pay by card</h2>
+                    <h3>Amount</h3>
+                    <div class="card_details_sub">
+                        <div class="card">
+                            <div class="">
+                                <span>First Name</span><br>
+                                <input id="firstName" class="text_box" type="text" placeholder="John">
+                            </div>
+                            <div class="">
+                                <span>Last Name</span><br>
+                                <input  class="text_box" type="text" name="" id="lastName" placeholder="James">
+                            </div>
+                            <div class="">
+                                <span>Card Number(no space or dashes)</span><br>
+                                <input id="cardNumber" class="text_box" type="text" placeholder="0123**************">
+                            </div>
+                            <div class="">
+                                <span>Enter amount</span><br>
+                                <input id="amount" class="text_box" type="number" placeholder="1000">
+                            </div>
+                            <div class="">
+                                <span>City</span><br>
+                                <input id="city" class="text_box" type="Text" placeholder="Abuja">
+                            </div>
+
+                        </div>
+                        <div class="">
+                            <div class="">
+                                <span>Phone Number</span><br>
+                                <input id="phoneNumber" class="text_box" type="text" placeholder="0701111111111">
+                            </div>
+                            <div class="">
+                                <span>Email</span><br>
+                                <input id="email" class="text_box" type="email" name="" id="" placeholder="john@example.com">
+                            </div>
+                            <div class="">
+                                <span>Expiration</span><br>
+                                <input id="month" class="text_box" type="number" placeholder="MM">
+                            </div>
+                            <div class="">
+                                <span>Year</span><br>
+                                <input id="year" class="text_box" type="date" placeholder="">
+                            </div>
+                            <div class="">
+                                <span>CVV</span><br>
+                                <input id="cvv" class="text_box" type="number" placeholder="123">
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="">
+                        <button id="handleClick"  onclick="validateMyForm()" class="btn_submit ">Submit</button>
+                    </div>
+                    
+                </div>
+            </form>
+            
+            
+        </section>
+    
+
+        <script src="script.js"></script>
+
+</body>
+</html>
