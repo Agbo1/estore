@@ -34,6 +34,12 @@ personalDetails.cvv = document.getElementById('cvv').value;
 
 console.log(personalDetails)
 
+if(firstName === ""){
+    console.log('empty name')
+}else{
+    alert("success")
+}
+
 
 
 }
