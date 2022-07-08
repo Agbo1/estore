@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="font/css/fontawesome.min.css">
     <link rel="stylesheet" href="font/css/all.min.css">
@@ -30,66 +33,79 @@
             
         </section>
         <section class="section_p1">
-            <form action="" id="form">
+            <form action="success.html" id="form" onsubmit="return validateMyForm()">
                 <div class="payment_details">
                     <h2>Pay by card</h2>
                     <h3>Amount</h3>
                     <div class="card_details_sub">
                         <div class="card">
-                            <div class="">
+                            <div class="m_10">
                                 <span>First Name</span><br>
-                                <input id="firstName" class="text_box" type="text" placeholder="John">
+                                <input id="firstName" class="text_box" type="text" placeholder="John" required maxlength="15">
+                                <!-- <div id="name_error">please enter first name</div> -->
                             </div>
-                            <div class="">
+                            <div class="m_10">
                                 <span>Last Name</span><br>
-                                <input  class="text_box" type="text" name="" id="lastName" placeholder="James">
+                                <input  class="text_box" type="text" name="" id="lastName" placeholder="James" maxlength="15" required>
+                                <!-- <div id="lastname_error">please enter last name</div> -->
                             </div>
-                            <div class="">
+                            <div class="m_10">
                                 <span>Card Number(no space or dashes)</span><br>
-                                <input id="cardNumber" class="text_box" type="text" placeholder="0123**************">
+                                <input id="cardNumber" class="text_box" type="text" placeholder="0123**************" required maxlength="16">
+                                <!-- <div id="cardNumber_error">please enter card number</div> -->
                             </div>
-                            <div class="">
+                            <div class="m_10">
                                 <span>Enter amount</span><br>
-                                <input id="amount" class="text_box" type="number" placeholder="1000">
+                                <input id="amount" class="text_box" type="number" placeholder="1000" required>
+                                <!-- <div id="amount_error">please enter amount</div> -->
                             </div>
-                            <div class="">
+                            <div class="m_10">
                                 <span>City</span><br>
-                                <input id="city" class="text_box" type="Text" placeholder="Abuja">
+                                <input id="city" class="text_box" type="Text" placeholder="Abuja" required>
+                                <!-- <div id="city_error">please enter city</div> -->
                             </div>
 
                         </div>
-                        <div class="">
-                            <div class="">
+                        <div class="card">
+                            <div class="m_10">
                                 <span>Phone Number</span><br>
-                                <input id="phoneNumber" class="text_box" type="text" placeholder="0701111111111">
+                                <input id="phoneNumber" class="text_box" type="text" placeholder="0701111111111" required maxlength="14">
+                                <!-- <div id="phoneNumber_error">please enter phone number</div> -->
                             </div>
-                            <div class="">
+                            <div class="m_10">
                                 <span>Email</span><br>
                                 <input id="email" class="text_box" type="email" name="" id="" placeholder="john@example.com">
+                                <!-- <div id="email_error">please enter e-mail</div> -->
                             </div>
-                            <div class="">
+                            <div class="m_10">
                                 <span>Expiration</span><br>
-                                <input id="month" class="text_box" type="number" placeholder="MM">
+                                <input id="month" class="text_box" type="text" placeholder="the month in the card" required maxlength="2">
+                                <!-- <div id="month_error">please enter month</div> -->
                             </div>
-                            <div class="">
+                            <div class="m_10">
                                 <span>Year</span><br>
-                                <input id="year" class="text_box" type="date" placeholder="">
+                                <input id="year" class="text_box" type="text" placeholder="input the year in the card" required maxlength="4">
+                                <!-- <div id="year_error">please enter year</div> -->
                             </div>
-                            <div class="">
+                            <div class="m_10">
                                 <span>CVV</span><br>
-                                <input id="cvv" class="text_box" type="number" placeholder="123">
+                                <input id="cvv" class="text_box" type="text" placeholder="123" required maxlength="3">
+                                <!-- <div id="cvv_error">please fill cvv</div> -->
                             </div>
                         </div>
                         
                         
                     </div>
                     <div class="">
+                        <!-- <a href="success.html" id="handleClick" onclick="validateMyForm()" class="btn_submit"> send</a> -->
                         <button id="handleClick"  onclick="validateMyForm()" class="btn_submit ">Submit</button>
                     </div>
                     
                 </div>
             </form>
-            
+            <div class="error">
+               <p> This is a new error </p>
+            </div>
             
         </section>
     

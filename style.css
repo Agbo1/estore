@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Gelasio', serif;
 }
 
 body{
@@ -98,7 +99,10 @@ p{
 
 
 #banner{
-    background-image: url(./img/lady.jpg);
+    background-image: linear-gradient(to right bottom,
+            rgba(27, 25, 25, 0.804),
+            rgba(10, 0, 8, 0.803),
+            rgba(8, 43, 8, 0.803)), url(./img/lady.jpg);
     height: 50vh;
     width: 100%;
     background-position: top 25% right 0;
@@ -116,43 +120,46 @@ p{
 
 #banner h4{
     padding-bottom:15px;
-    color: white;
-    font-size: 16px;
-    font-weight: 700;
+    color: rgb(237, 217, 217);
+    font-size: 50px;
+    font-weight: 600;
 }
 
 #banner h2{
-    color: white;
-    font-weight: 700;
+    color: rgb(228, 227, 227);
+    font-weight: 600;
     font-size: 30px;
 }
 
 #banner p{
     color: white;
-    font-size: 15px;
+    font-size: 26px;
+    margin-bottom: 2rem;
+
 }
 
 #banner h1{
     color: white;
-    font-size: 25px;
+    font-size: 26px;
 }
 
 /* #banner .banner_box:hover button{
     background-color: transparent
 } */
 
-.btn{
-    color: white; 
+.btn {
+    color: rgb(246, 226, 226); 
     background: transparent;
     border: none;
-    padding: 10px 30px;
-    background-color: rgb(155, 67, 67) ;
-    font-weight: 700;
-    font-size: 15px;
-    margin-top: 10px;
+    padding: 15px 50px;
+    background-color: rgb(98 48 8) ;
+    font-weight: 500;
+    font-size: 17px;
+    margin-top: 2rem;
     cursor: pointer;
     border-radius: 4px;
     transition: 0.3s;
+    text-decoration: none;
 
     
 
@@ -172,7 +179,7 @@ p{
 
 #feature p{
     color: rgb(96, 95, 95);
-    font-size: 18px;
+    font-size: 25px;
 }
 
 
@@ -204,15 +211,20 @@ p{
 
 #feature .pro .des span{
     color: #606063;
-    font-size: 12px;
+    font-size: 20px;
 
 }
 
 #feature .pro .des h4{
     color: rgb(52, 177, 52);
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 700;
     padding-top: 7px;
+
+}
+
+#feature .pro .des h5{
+    font-size: 20px;
 
 }
 
@@ -227,7 +239,17 @@ p{
 .footer_header {
     text-align: center;
     color: rgb(59, 50, 50);
+    font-size: 30px;
+    
 
+}
+
+.footer_header span{
+    font-size: 25px;
+}
+
+.footer_header h3{
+    color: rgb(38, 36, 36);
 }
 
 
@@ -236,22 +258,24 @@ p{
     align-items:center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 40px 0;
     line-height: 1.5rem;
     transition: 0.3s ease;
+    padding: 2rem;
+    
 }
 
 #footer_info .footer_sub{
      margin-bottom: 2rem;
+     font-size: 20px;
  }
 
  #footer_info  .footer_sub h3{
-     font-size: 16px;
+     font-size: 25px;
      color: rgb(53, 43, 43);
  }
 
  #footer_info  .footer_sub span{
-     font-size: 15px;
+     font-size: 20px;
      color: gray;
  }
 
@@ -270,10 +294,38 @@ p{
      color: green;
  }
 
+ h5{
+    font-size: 22px;
+    margin: 12px 0;
+    color: rgb(55, 54, 54);
+ }
+
  .pro_container_main{
      width: 50%;
 
  }
+
+ /* .card_details_sub #name_error,
+ .card_details_sub #lastname_error,
+ .card_details_sub #cardNumber_error,
+ .card_details_sub #amount_error,
+ .card_details_sub #city_error,
+ .card_details_sub #phoneNumber_error,
+ .card_details_sub #email_error,
+ .card_details_sub #month_error,
+ .card_details_sub #year_error,
+ .card_details_sub #cvv_error{
+     background-color: rgba(203, 19, 19, 0.604);
+     font-size: 12px;
+     border: none;
+     color: white;
+     width: 160px;
+     border-radius: 100px;
+     padding: 1px 20px;
+     transition: o.3s;
+     display: none;
+
+ } */
 
  .payment_details{
      display: flex;
@@ -315,13 +367,20 @@ p{
 
  .text_box{
      width: 200px;
-     padding: 4px;
+     padding: 8px;
      border: 1px solid gray;
      border-radius: 5px;
      box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.03);
      transition: 0.3s;
      margin: 5px 10px;
+     font-size: 13px;
  }
+
+ .m_10{
+    margin: 17px 10px;
+ }
+
+
 .card_details_sub{
     display: flex;
     flex-wrap: wrap;
@@ -332,6 +391,9 @@ p{
 
  .card{
      margin-right: 15px;
+     color: rgb(19, 18, 18);
+     font-size: 19px;
+     font-weight: 500;
 
  }
 
@@ -339,10 +401,11 @@ p{
     color: white; 
     background: transparent;
     border: none;
-    padding: 10px 150px;
-    background-color: rgb(177, 206, 197) ;
+    width: 200px;
+    padding: 8px;
+    background-color: rgb(225, 137, 42) ;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 21px;
     margin-top: 10px;
     cursor: pointer;
     border-radius: 4px;
@@ -352,8 +415,8 @@ p{
 
 .btn_submit:hover{
 
-    background-color: burlywood;
-    color: rgb(139, 0, 88);
+    background-color: darkcyan;
+    color: rgb(209, 207, 226);
 }
 
 
@@ -441,7 +504,30 @@ p{
         font-size: 15px;
     }
 
-    
+    #footer_info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer_header span {
+        font-size: 20px;
+    }
+
+    #footer_info h3{
+        text-align: center;
+        padding: 5px 0;
+        font-size: 24px;
+    }
+
+    #footer_info h5{
+        text-align: center;
+        font-size: 22px;
+        color: rgb(55, 54, 54);
+    }
+
+ 
 }
 
 
